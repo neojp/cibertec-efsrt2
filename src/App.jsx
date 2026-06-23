@@ -10,8 +10,9 @@ import Footer from './components/Footer.jsx';
 import '@css/global.css';
 
 function App() {
+	const basename = import.meta.env.DEV ? '/' : '/cibertec-efsrt2';
 	return (
-		<Router>
+		<Router basename={basename}>
 			<Header />
 			<Anuncio />
 			<main>
