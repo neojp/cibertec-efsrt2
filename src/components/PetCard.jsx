@@ -17,7 +17,7 @@ export const PetCard = ({ mini = false, datos = {} }) => {
 	return (
 		<Link to={`/mascotas/${datos.id}`} className={`card card--${extendclass} classCard`}>
 			<div className='content-img'>
-				<img src={`/src/images/mascotas/${imagen}`} alt={nombre} />
+				<img src={`${import.meta.env.BASE_URL}src/images/mascotas/${imagen}`} alt={nombre} />
 			</div>
 			<div className="data">
 				<h3>{nombre}</h3>
