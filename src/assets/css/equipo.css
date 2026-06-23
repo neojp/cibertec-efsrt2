@@ -1,0 +1,53 @@
+.equipo .content {
+    padding: 2.5em 4em;
+}
+
+.equipo h2 {
+    text-align: left;
+}
+
+.equipo ul {
+	align-items: center;
+	display: flex;
+	flex-wrap: wrap;
+	gap: 2em 4em;
+	justify-content: center;
+	list-style: none;
+	margin: auto;
+	padding: 2em 0;
+    max-width: 850px;
+}
+
+.equipo li {
+	background: rgba(255, 255, 255, 0.05);
+	border-radius: 12px;
+	overflow: hidden;
+	padding: 1.5rem;
+	transition: transform 200ms ease, box-shadow 200ms ease;
+    max-width: 180px;
+}
+
+.equipo img {
+	border-radius: 8px;
+	height: auto;
+	margin-bottom: 1rem;
+	width: 100%;
+}
+
+.equipo dl {
+	margin: 0;
+	text-align: center;
+}
+
+.equipo dt {
+    color: var(--terracota);
+	font-size: 1.2em;
+	font-weight: bold;
+	margin: 0.5em 0;
+}
+
+.equipo dd {
+	font-size: 0.9em;
+	margin: 0;
+    opacity: 0.75;
+}

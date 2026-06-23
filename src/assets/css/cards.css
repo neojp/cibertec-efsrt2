@@ -1,0 +1,25 @@
+.cards ul {
+	display: flex;
+	gap: 20px;
+	justify-content: center;
+	list-style: none;
+	margin: 0 auto;
+	max-width: 1000px;
+	padding: 20px;
+}
+
+.cards li {
+	background: #1f1f1f;
+	border-radius: 20px;
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+	padding: 20px;
+}
+
+/* mostrar las tarjetas de manera vertical en móvil */
+@media (max-width: 768px) {
+	.cards ul {
+		flex-direction: column;
+	}
+}

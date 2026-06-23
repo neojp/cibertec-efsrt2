@@ -1,0 +1,139 @@
+.contacto-form {
+    text-align: left;
+    padding: 2em 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2em
+}
+
+/* .contacto-form h2 { */
+/* margin-bottom: 3em; */
+/* } */
+
+.contacto-form form {
+    position: relative;
+    align-self: center;
+}
+
+.contacto-form form .overlay {
+    align-items: center;
+    background: rgba(249, 246, 240, 0);
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    left: 0;
+    pointer-events: none;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.contacto-form form .overlay .loader {
+    opacity: 0;
+}
+
+.contacto-form form.loading .overlay {
+    pointer-events: all;
+    background: rgba(249, 246, 240, 0.5);
+}
+
+.contacto-form form.loading .overlay .loader {
+    opacity: 1;
+}
+
+.contacto-form p {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 1.25em;
+}
+
+.contacto-form label {
+    padding-top: 0.5em;
+    width: 100px;
+
+    small {
+        font-size: 0.6em;
+        opacity: 0.5;
+        display: block;
+    }
+}
+
+.contacto-form .input-mascota label {
+    padding-top: 0;
+}
+
+.contacto-form input,
+.contacto-form select,
+.contacto-form textarea {
+    border-radius: 12px;
+    border: 0;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.25);
+    color: var(--humo);
+    flex: 1;
+    font-family: inherit;
+    font-size: 1em;
+    padding: 0.5em;
+}
+
+.contacto-form textarea {
+    height: 8em;
+}
+
+.contacto-form .buttons {
+    justify-content: center;
+    margin-top: 2em;
+}
+
+.loader {
+    animation: rotation 1s linear infinite;
+    border-radius: 50%;
+    border: 5px solid var(--terracota);
+    border-bottom-color: transparent;
+    box-sizing: border-box;
+    display: inline-block;
+    height: 48px;
+    width: 48px;
+}
+
+.errors {
+    color: #c53030;
+    box-sizing: border-box;
+    flex: none;
+    font-size: 0.75rem;
+    padding-left: calc(100px + 1.5em);
+    padding-top: 0.5em;
+    width: 100%;
+    align-self: flex-end;
+    text-align: right;
+    list-style: none;
+}
+
+@keyframes rotation {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@media (min-width: 768px) {
+    .contacto-form {
+        font-size: 1.5em;
+    }
+
+    .contacto-form form {
+        width: 640px;
+    }
+
+    .contacto-form label {
+        width: 200px;
+    }
+
+    .contacto-form .errors {
+        font-size: 0.85rem;
+        padding-left: calc(200px + 1.5em);
+    }
+}

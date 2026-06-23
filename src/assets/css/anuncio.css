@@ -1,0 +1,19 @@
+section.anuncio {
+    font-size: 1rem;
+	padding-bottom: 1.5em;
+	padding-top: 1.5em;
+}
+
+section.anuncio p {
+	margin: 0;
+}
+
+section.anuncio a {
+    display: inline-block;
+	font-weight: bold;
+    margin-left: 0.35em;
+}
+
+section.anuncio a:hover {
+	text-decoration: none;
+}
